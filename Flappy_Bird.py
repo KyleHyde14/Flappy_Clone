@@ -160,13 +160,13 @@ while run:
             down = True
             while down:
                 show_text(str(points), WIDTH/2 -10, 20, WHITE)
-                show_text('Press R to reestart or C to close', WIDTH * 0.15,
+                show_text('Press Space to reestart or C to close', WIDTH * 0.15,
                           HEIGHT/2.5, WHITE)
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:
                         pygame.quit()
                     elif event.type == KEYDOWN:
-                        if event.key == pygame.K_r:
+                        if event.key == pygame.K_SPACE:
                             restart()
                             break
                         if event.key == pygame.K_c:
